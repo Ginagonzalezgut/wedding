@@ -14,9 +14,27 @@ get_header();
     <div class="landing-hero-overlay"></div>
 </section>
 
+<section class="countdown">
 
+    <div class="countdown-date">
+        <div class="countdown-numbers">
+            <div>345</div>
+            <div class="countdown-label">Días</div>
+        </div>
+        <div class="countdown-numbers">
+            <div>8</div>
+            <div class="countdown-label">Horas</div>
+        </div>
+        <div class="countdown-numbers">
+            <div>30</div>
+            <div class="countdown-label">Minutos</div>
+        </div>
+
+    </div>
+</section>
 
 <main class="container">
+
 </main>
 
 <?php

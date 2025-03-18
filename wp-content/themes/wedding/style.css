@@ -219,3 +219,20 @@ div.wpforms-container-full
 .moment:hover .moment-image {
   filter: none;
 }
+.countdown {
+  background-color: #c3bfc0;
+  padding: 100px;
+  text-align: center;
+}
+
+.countdown-date {
+  font-size: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+.countdown-label {
+  font-size: 34px;
+}
