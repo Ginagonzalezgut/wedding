@@ -20,6 +20,7 @@ Tags: wedding,married
   --fuente-principal: "Mulish", sans-serif;
   --text-color: #615b4b;
   --bg-color: #d5cbc0;
+  --bg-section: #ece1d8;
 }
 
 body {
@@ -220,7 +221,6 @@ div.wpforms-container-full
   filter: none;
 }
 .countdown {
-  background-color: #c3bfc0;
   padding: 100px;
   text-align: center;
 }
@@ -234,5 +234,9 @@ div.wpforms-container-full
   gap: 130px;
 }
 .countdown-label {
-  font-size: 34px;
+  margin-top: 15px;
+  font-size: 25px;
+}
+main {
+  padding-top: 200px;
 }
