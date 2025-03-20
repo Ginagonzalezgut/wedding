@@ -3,6 +3,11 @@
 function wedding_setup()
 {
     add_theme_support("post-thumbnails");
+    add_theme_support('custom-logo', array(
+        'height'      => 100,
+        'width'       => 100,
+        'flex-height' => true,
+    ));
 }
 add_action("after_setup_theme", "wedding_setup");
 
