@@ -30,6 +30,10 @@ get_header();
             <div id="minutes">30</div>
             <div class="countdown-label">Minutos</div>
         </div>
+        <div class="countdown-numbers">
+            <div id="seconds">20</div>
+            <div class="countdown-label">Segundos</div>
+        </div>
     </div>
 </section>
 
@@ -42,13 +46,19 @@ get_header();
         const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
         const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((diferencia % (1000 * 60)) / (1000));
 
         document.getElementById('days').innerHTML = dias;
         document.getElementById('hours').innerHTML = horas;
         document.getElementById('minutes').innerHTML = minutos;
+        document.getElementById('seconds').innerHTML = segundos;
     }
 
     countDown();
+
+    setInterval(() => {
+        countDown();
+    }, 1000)
 </script>
 <main class="container">
 
