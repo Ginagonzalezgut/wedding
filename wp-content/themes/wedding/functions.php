@@ -17,6 +17,7 @@ add_action("init", "wedding_menus");
 function wedding_styles()
 {
     wp_enqueue_style("reset", "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css", array(), "1.0.0");
-    wp_enqueue_style("style", get_stylesheet_uri(), array("reset"), "1.0.0");
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+    wp_enqueue_style("style", get_stylesheet_uri(), array("reset", "font-awesome"), "1.0.0");
 }
 add_action("wp_enqueue_scripts", "wedding_styles");
