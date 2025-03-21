@@ -16,9 +16,9 @@ get_header();
     <?php
     endwhile;
     ?>
-    <div class="container">
-        <p>Queremos que el día de nuestra boda disfrutes tanto como lo haremos nosotros
-            por eso hemos buscado algunos de los mejores hoteles de nuestra querida ciudad
+    <div class="container accommodation">
+        <h2 class="accommodation-title">Hoteles</h2>
+        <p class="accommodation-subtitle">Hemos buscado algunos de los mejores hoteles de nuestra querida ciudad
             para ayudarte a encontrar la estancia perfecta si la necesitas</p>
         <div class="owl-carousel">
             <?php

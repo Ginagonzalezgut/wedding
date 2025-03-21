@@ -29,6 +29,20 @@ body {
   font-family: var(--fuente-principal);
   -webkit-font-smoothing: antialiased;
 }
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  max-width: 750px;
+  color: var(--text-color);
+}
 
 .flex-center {
   display: flex;
@@ -237,7 +251,7 @@ div.wpforms-container-full
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 130px;
+  gap: 90px;
 }
 .countdown-label {
   margin-top: 15px;
@@ -253,7 +267,7 @@ div.wpforms-container-full
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
-  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #b8a890;
   border-radius: 100%;
   height: 50px;
   width: 50px;
@@ -292,11 +306,13 @@ div.wpforms-container-full
   gap: 8px;
   font-size: 14px;
   padding: 20px;
+  letter-spacing: 0.01em;
 }
 
 .hotel-title {
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
 .hotel-image {
@@ -318,8 +334,18 @@ div.wpforms-container-full
   letter-spacing: 0.05em;
   text-align: center;
   text-decoration: none;
+  line-height: 1.2;
 }
 .hotel-button:hover {
   background-color: #b8a890;
   cursor: pointer;
+}
+.accommodation-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.accommodation-subtitle {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
 }
