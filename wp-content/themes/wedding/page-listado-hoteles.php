@@ -30,16 +30,16 @@ get_header();
                 <div class="hotel-container">
                     <article class="hotel">
                         <div class="hotel-desc">
-                            <h2 class="hotel-title"> <?php the_title(); ?></h2>
-                            <div class="hotel-address"><?php the_field("direccion"); ?></div>
-                            <div><?php the_field("precio_por_noche") ?> por noche</div>
+                            <h3 class="hotel-title"> <?php the_title(); ?></h3>
+                            <p class="hotel-address small-text"><?php the_field("direccion"); ?></p>
+                            <p class="small-text"><?php the_field("precio_por_noche") ?> por noche</p>
                         </div>
                         <?php the_post_thumbnail('medium_large', ['class' => 'hotel-image']); ?>
                     </article>
                     <?php
                     $hotel_url = get_field("url_hotel");
                     if ($hotel_url): ?>
-                        <a class="hotel-button" href="<?php echo esc_url($hotel_url)  ?>" target="_blank" rel="noopener noreferrer">
+                        <a class="button" href="<?php echo esc_url($hotel_url)  ?>" target="_blank" rel="noopener noreferrer">
                             Más información
                         </a>
                     <?php endif; ?>
@@ -57,9 +57,15 @@ get_header();
             $(".owl-carousel").owlCarousel({
                 nav: true,
                 loop: true,
+                // autoplay: true,
+                // autoplayTimeout: 3000,
+                // fluidSpeed: true,
+                // autoplaySpeed: 1000,
+                // autoplayHoverPause: true
             });
         });
     </script>
+    <h2>Actividades</h2>
 </main>
 
 <?php

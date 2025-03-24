@@ -34,6 +34,13 @@ h2 {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 p {
   font-size: 18px;
@@ -43,7 +50,28 @@ p {
   max-width: 750px;
   color: var(--text-color);
 }
-
+.small-text {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.button {
+  background-color: #e8e3dc;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  color: #333;
+  transition: background-color 0.3s ease-in-out;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+}
+.button:hover {
+  background-color: #b8a890;
+  cursor: pointer;
+}
 .flex-center {
   display: flex;
   align-items: center;
@@ -56,7 +84,7 @@ p {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header .container {
@@ -258,13 +286,6 @@ div.wpforms-container-full
   font-size: 25px;
 }
 
-.hotels {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 45px;
-  margin-block: 100px; */
-}
-
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
   border: 1px solid #b8a890;
@@ -289,8 +310,6 @@ div.wpforms-container-full
 }
 
 .hotel-container {
-  border-bottom: 1px solid #e8e3dc;
-  border-radius: 20px;
   padding: 30px;
 }
 
@@ -309,12 +328,6 @@ div.wpforms-container-full
   letter-spacing: 0.01em;
 }
 
-.hotel-title {
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-}
-
 .hotel-image {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -322,24 +335,7 @@ div.wpforms-container-full
   height: 300px;
   object-fit: cover;
 }
-.hotel-button {
-  background-color: #e8e3dc;
-  border-radius: 5px;
-  width: 200px;
-  padding: 10px;
-  display: block;
-  margin: auto;
-  color: #333;
-  transition: background-color 0.3s ease-in-out;
-  letter-spacing: 0.05em;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.2;
-}
-.hotel-button:hover {
-  background-color: #b8a890;
-  cursor: pointer;
-}
+
 .accommodation-title {
   text-align: center;
   margin-bottom: 10px;
