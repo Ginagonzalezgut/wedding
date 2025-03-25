@@ -14,7 +14,8 @@ add_action("after_setup_theme", "wedding_setup");
 function wedding_menus()
 {
     register_nav_menus(array(
-        "menu-principal" => "Menú Principal"
+        "menu-principal" => "Menú Principal",
+        "menu-footer" => "Menú Footer",
     ));
 }
 add_action("init", "wedding_menus");
