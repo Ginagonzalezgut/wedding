@@ -360,6 +360,10 @@ div.wpforms-container-full
   }
 }
 
+.galeria-imagenes img {
+  width: 100%;
+}
+
 @media (min-width: 668px) {
   .galeria-imagenes img {
     height: 300px;
